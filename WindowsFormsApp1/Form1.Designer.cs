@@ -90,6 +90,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -99,6 +100,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Close browser";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -108,6 +110,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // richTextBox1
             // 
@@ -116,6 +119,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(544, 211);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
+            this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
             // 
             // label4
             // 
@@ -143,6 +147,8 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
